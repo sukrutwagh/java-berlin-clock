@@ -8,20 +8,6 @@ Narrative:
     I want to tell the time using the Berlin Clock
     So that I can increase then number of ways that I can read the time
 
-Scenario: Valid accepted times
-When time is <time>
-Then <time> is <isValid>
-
-Examples:
-|time|isValid|
-|00:00:00|true|
-|13:17:01|true|
-|23:59:59|true|
-|24:00:00|true|
-|24:00:01|false|
-|00:01|false|
-|00:01:99|false|
-
 Scenario: Midnight
 When the time is 00:00:00
 Then the clock should look like

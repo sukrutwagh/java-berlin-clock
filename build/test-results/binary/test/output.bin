@@ -1,0 +1,13 @@
+±2017-11-11T08:57:02.059 | est worker | ClasspathStoryFinder | INFO   - Searching for stories called [berlin-clock.story] in [[C:\Users\sukrut\git\java-berlin-clock\build\classes\test, C:\Users\sukrut\git\java-berlin-clock\build\resources\test, C:\Users\sukrut\git\java-berlin-clock\build\classes\main]] 
+ß2017-11-11T08:57:02.090 | est worker | aviouralTestEmbedder | INFO   - Running [BehaviouralTestEmbedder] with spring_stories [[file:/C:/Users/sukrut/git/java-berlin-clock/build/resources/test/stories/berlin-clock.story]] 
+!Processing system properties {}
+ÜUsing controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,threads=1]
+kRunning story file:/C:/Users/sukrut/git/java-berlin-clock/build/resources/test/stories/berlin-clock.story
+ä
+(BeforeStories)
+
+
+(AfterStories)
+
+Generating reports view to 'C:\Users\sukrut\git\java-berlin-clock\build\classes\jbehave' using formats '[stats, html, console]' and view properties '{defaultFormats=stats, decorateNonHtml=true, viewDirectory=view, decorated=ftl/jbehave-report-decorated.ftl, reports=ftl/jbehave-reports-with-totals.ftl, maps=ftl/jbehave-maps.ftl, navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl}'
+hReports view generated with 1 stories (of which 0 pending) containing 4 scenarios (of which 0 pending)

@@ -1,5 +1,6 @@
 package com.ubs.opsit.interviews;
 
+import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.junit.Test;
@@ -13,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class BerlinClockFixture {
 
-    private TimeConverter berlinClock;
+    private TimeConverter berlinClock = new BerlinClockTimeConverter();
     private String theTime;
 
     @Test
@@ -22,6 +23,16 @@ public class BerlinClockFixture {
                 .usingStepsFrom(this)
                 .withStory("berlin-clock.story")
                 .run();
+    }
+    
+    @When("time is $time")
+    public void whenTimeIs(@Named("time")String time) {
+        theTime = time;
+    }
+    
+    @Then("$time is $isValid")
+    public void thenTimeIsValid(@Named("isValid")Boolean isValid) {
+    	assertThat(berlinClock.isValidTime(theTime)).isEqualTo(isValid);
     }
 
     @When("the time is $time")
